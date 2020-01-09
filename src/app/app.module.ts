@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { INACTIVITY_PROVIDER } from './inactivity-countdown-provider';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    INACTIVITY_PROVIDER
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
